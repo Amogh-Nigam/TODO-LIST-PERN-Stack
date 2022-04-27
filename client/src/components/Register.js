@@ -45,7 +45,9 @@ const Register = ({ setAuth }) => {
 
   return (
     <Fragment>
-      <h1 className="mt-5 text-center">Register</h1>
+       <div className="jumbotron mt-5">
+
+      <h1 className="text-center">Register</h1>
       <form onSubmit={onSubmitForm}>
         <input
           type="text"
@@ -54,7 +56,7 @@ const Register = ({ setAuth }) => {
           placeholder="email"
           onChange={e => onChange(e)}
           className="form-control my-3"
-        />
+          />
         <input
           type="password"
           name="password"
@@ -62,7 +64,7 @@ const Register = ({ setAuth }) => {
           placeholder="password"
           onChange={e => onChange(e)}
           className="form-control my-3"
-        />
+          />
         <input
           type="text"
           name="name"
@@ -70,10 +72,12 @@ const Register = ({ setAuth }) => {
           placeholder="name"
           onChange={e => onChange(e)}
           className="form-control my-3"
-        />
+          />
         <button className="btn btn-success btn-block">Submit</button>
       </form>
-      <Link to="/login">login</Link>
+      <br></br>
+      <Link className="btn btn-info" to="/login">Login</Link>
+          </div>
     </Fragment>
   );
 };

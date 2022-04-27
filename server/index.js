@@ -4,12 +4,12 @@ const cors = require("cors");
 
 //middleware
 
-app.use(cors());
-app.use(express.json());
+app.use(cors());  // frontend can interact with backend
+app.use(express.json());  // 
 
 //routes
 
-app.use("/authentication", require("./routes/jwtAuth"));
+app.use("/authentication", require("./routes/jwtAuth")); //login & register routes
 
 app.use("/dashboard", require("./routes/dashboard"));
 

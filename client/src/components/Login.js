@@ -46,7 +46,8 @@ const Login = ({ setAuth }) => {
 
   return (
     <Fragment>
-      <h1 className="mt-5 text-center">Login</h1>
+       <div className="jumbotron mt-5">
+      <h1 className="text-center">Login</h1>
       <form onSubmit={onSubmitForm}>
         <input
           type="text"
@@ -54,17 +55,19 @@ const Login = ({ setAuth }) => {
           value={email}
           onChange={e => onChange(e)}
           className="form-control my-3"
-        />
+          />
         <input
           type="password"
           name="password"
           value={password}
           onChange={e => onChange(e)}
           className="form-control my-3"
-        />
+          />
         <button className="btn btn-success btn-block">Submit</button>
       </form>
-      <Link to="/register">register</Link>
+      <br></br>
+      <Link className="btn btn-info" to="/register">register</Link>
+          </div>
     </Fragment>
   );
 };

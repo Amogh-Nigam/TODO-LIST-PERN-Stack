@@ -52,9 +52,10 @@ const Dashboard = ({ setAuth }) => {
           Logout
         </button>
       </div>
-
+      <div className="jumbotron mt-5"> 
       <InputTodo setTodosChange={setTodosChange} />
       <ListTodos allTodos={allTodos} setTodosChange={setTodosChange} />
+      </div>
     </div>
   );
 };

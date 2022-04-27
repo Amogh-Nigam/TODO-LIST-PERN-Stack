@@ -30,7 +30,7 @@ const InputTodo = ({ setTodosChange }) => {
   };
   return (
     <Fragment>
-      <h1 className="text-center my-5">Input Todo</h1>
+      <h1 className="text-center">Input Todo</h1>
       <form className="d-flex" onSubmit={onSubmitForm}>
         <input
           type="text"
